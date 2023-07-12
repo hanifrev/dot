@@ -4,7 +4,7 @@ import { navigation } from "../data/navigation";
 
 const NavigationModal = () => {
   return (
-    <div className="px-5 py-3 flex flex-col gap-3 md:hidden relative z-50 bg-white w-full">
+    <div className="px-5 py-3 flex flex-col gap-3 md:hidden absolute -ml-6 z-50 bg-white w-full">
       {navigation.map((item) => (
         <NavDropdown title={item.title} link={item.link} />
       ))}

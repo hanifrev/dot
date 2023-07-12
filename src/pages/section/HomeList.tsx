@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { homeview } from "../data/homeview";
 import HomeCard from "../components/HomeCard";
 import DetailCard from "../components/DetailCard";
+import Testimonial from "../components/Testimonial";
 
 const HomeList = () => {
   return (
@@ -12,7 +13,7 @@ const HomeList = () => {
           Tampilan Rumah
         </div>
         <div className="lg:flex">
-          <div className="flex flex-col items-center gap-3 md:flex-row md:flex-wrap md:justify-center lg:justify-start">
+          <div className="flex flex-col items-center gap-3 md:flex-row md:flex-wrap md:justify-center lg:justify-start lg:content-start">
             {homeview.map((item) => (
               <HomeCard
                 imgSource={item.imgSource}
@@ -21,7 +22,10 @@ const HomeList = () => {
               />
             ))}
           </div>
-          <DetailCard />
+          <div>
+            <DetailCard />
+            <Testimonial />
+          </div>
         </div>
       </Layout>
     </div>
