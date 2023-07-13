@@ -25,8 +25,11 @@ const Testimonial = () => {
         Testimoni
       </div>
       <div className="flex flex-col gap-4 w-[328px] lg:w-[364px]">
-        {data.map((item) => (
-          <div className="w-[328px] lg:w-[364px] justify-start items-start gap-4 flex">
+        {data.map((item, index) => (
+          <div
+            className="w-[328px] lg:w-[364px] justify-start items-start gap-4 flex"
+            key={index}
+          >
             <img src="/assets/profilepic.svg" className="w-11 h-11 relative" />
             <div className="w-[304px] self-stretch flex-col justify-start items-start gap-1 flex">
               <div className="justify-start items-center gap-2 flex">

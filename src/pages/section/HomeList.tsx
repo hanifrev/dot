@@ -14,8 +14,9 @@ const HomeList = () => {
         </div>
         <div className="lg:flex">
           <div className="flex flex-col items-center gap-3 md:flex-row md:flex-wrap md:justify-center lg:justify-start lg:content-start">
-            {homeview.map((item) => (
+            {homeview.map((item, index) => (
               <HomeCard
+                key={index}
                 imgSource={item.imgSource}
                 name={item.name}
                 size={item.size}
