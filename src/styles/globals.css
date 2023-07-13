@@ -21,6 +21,7 @@
 body {
   font-family: "Source Sans 3", sans-serif;
   color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
   background: linear-gradient(
       to bottom,
       transparent,

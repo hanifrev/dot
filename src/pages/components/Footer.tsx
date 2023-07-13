@@ -3,12 +3,12 @@ import Layout from "./Layout";
 
 const Footer = () => {
   return (
-    <div className="bg-sky-950">
+    <div className="bg-sky-950 font">
       <Layout>
         <div className="text-white bg-sky-950 py-[39px]">
           <div className="flex flex-col md:flex-row md:justify-between">
             {/* section 1 left */}
-            <div className="lg:w-[608px] flex flex-col gap-4">
+            <div className="md:w-[400px] lg:w-[608px] flex flex-col gap-4">
               <img
                 className="w-[120px]  md:w-[169px] relative invert"
                 src="/assets/Logo.svg"
@@ -18,16 +18,19 @@ const Footer = () => {
                 dengan misi mengembangkan proses pembangunan dan renovasi rumah
                 secara lebih baik serta berkelanjutan.
               </div>
-              <div className="flex flex-row p-2">
+              <div className="flex flex-row p-2 gap-3">
                 <img src="/assets/Message.svg" />
-                <div className="w-[528px] text-base font-normal underline leading-snug">
+                <a
+                  href="mailto:sobat@sobatbangum.com"
+                  className="w-[528px] text-base font-normal underline leading-snug"
+                >
                   sobat@sobatbangum.com
-                </div>
+                </a>
               </div>
-              <div className=" text-white text-base font-normal leading-snug">
+              <div className=" text-white text-base font-normal leading-snug ">
                 Sosial Media :
               </div>
-              <div className="flex flex-row gap-[26px]">
+              <div className="flex flex-row gap-[26px] justify-center md:justify-normal">
                 <a href="#">
                   <img src="/assets/oval-ig.svg" />
                 </a>
@@ -85,6 +88,66 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col lg:flex-row pt-[46px]">
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-1  flex">
+              <div className=" lg:h-[21px] text-white text-base font-semibold leading-tight">
+                Kredit Bangun Rumah
+              </div>
+              <div className="justify-start items-center gap-6  flex">
+                <img className="w-14 h-14" src="/assets/mandiri.png" />
+                <img className="w-14 h-14" src="/assets/btn.png" />
+                <img className="w-14 h-14" src="/assets/bni.png" />
+              </div>
+            </div>
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-1  flex">
+              <div className="lg:h-[21px] text-white text-base font-semibold leading-tight">
+                Tunai Via Bank Transfer
+              </div>
+              <div className="justify-start items-start gap-6  flex">
+                <img className="w-14 h-14" src="/assets/mandiri.png" />
+                <img className="w-14 h-14" src="/assets/bri.png" />
+                <img className="w-14 h-14" src="/assets/bni.png" />
+                <img className="w-14 h-14" src="/assets/permata.png" />
+              </div>
+            </div>
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-1  flex">
+              <div className="w-[175px] lg:h-[21px] text-white text-base font-semibold leading-tight">
+                Kartu Kredit
+              </div>
+              <div className="justify-start items-start gap-6  flex">
+                <img className="w-14 h-[55.14px]" src="/assets/visa.png" />
+                <img className="w-14 h-[55.14px]" src="/assets/master.png" />
+                <img className="w-14 h-[55.14px]" src="/assets/jcb.png" />
+              </div>
+            </div>
+            <div className="grow shrink basis-0 flex-col justify-start items-start gap-2  flex">
+              <div className="text-white text-base font-semibold leading-tight">
+                Rekan Teknologi Tambahan
+              </div>
+              <div className="justify-start items-center gap-6  flex">
+                <img className="w-14 h-[55.14px]" src="/assets/rekan1.png" />
+                <img className="w-14 " src="/assets/rekan2.png" />
+                <img className="w-14 h-[55.14px]" src="/assets/rekan3.png" />
+                <img className="w-14 h-[55.14px]" src="/assets/rekan4.png" />
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-[46px] justify-between items-center gap-5 flex flex-col md:flex-row">
+            <div className="justify-start items-end gap-4 flex">
+              <div className="text-white text-base font-normal leading-9 ">
+                Powered by :
+              </div>
+              <img
+                src="/assets/sig.svg"
+                className="w-[71px] h-[41px] relative"
+              />
+            </div>
+            <div className="text-white text-sm font-normal leading-[16.80px]">
+              Copyright © 2023 SobatBangun. All rights reserved.
             </div>
           </div>
         </div>
