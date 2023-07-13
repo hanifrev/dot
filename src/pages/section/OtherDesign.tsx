@@ -1,7 +1,7 @@
 import React from "react";
 import OtherDesignCard from "../components/OtherDesignCard";
-import { OtherDesignData } from "../data/otherdesign";
 import Layout from "../components/Layout";
+import { OtherDesignData } from "@/data/otherdesign";
 
 const OtherDesign = () => {
   return (

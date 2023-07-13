@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -18,12 +19,12 @@ const Slider = () => {
   const properties = {
     prevArrow: (
       <button style={{ ...buttonStyle }} className="ml-4 lg:ml-[43px]">
-        <img src="/assets/chevron-left.svg" />
+        <img src="/assets/chevron-left.svg" alt="img" />
       </button>
     ),
     nextArrow: (
       <button style={{ ...buttonStyle }} className="mr-4 lg:mr-[43px]">
-        <img className="" src="/assets/chevron-right.svg" />
+        <img className="" src="/assets/chevron-right.svg" alt="img" />
       </button>
     ),
   };

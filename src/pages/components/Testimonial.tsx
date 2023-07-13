@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const Testimonial = () => {
@@ -30,7 +31,11 @@ const Testimonial = () => {
             className="w-[328px] lg:w-[364px] justify-start items-start gap-4 flex"
             key={index}
           >
-            <img src="/assets/profilepic.svg" className="w-11 h-11 relative" />
+            <img
+              src="/assets/profilepic.svg"
+              className="w-11 h-11 relative"
+              alt="img"
+            />
             <div className="w-[304px] self-stretch flex-col justify-start items-start gap-1 flex">
               <div className="justify-start items-center gap-2 flex">
                 <div className="text-zinc-900 text-sm lg:text-base font-semibold leading-tight">
@@ -38,7 +43,11 @@ const Testimonial = () => {
                 </div>
                 <div className="justify-start items-center gap-1 flex">
                   <div className="justify-center items-center flex">
-                    <img src="/assets/stars.svg" className="w-5 h-5 relative" />
+                    <img
+                      src="/assets/stars.svg"
+                      className="w-5 h-5 relative"
+                      alt="img"
+                    />
                   </div>
                   <div className="text-slate-600 text-sm font-normal leading-7">
                     {item.rating}

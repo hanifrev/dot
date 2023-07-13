@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import NavigationModal from "./NavigationModal";
-import { navigation } from "../data/navigation";
 import NavDropdown from "./NavDropdown";
 import Layout from "./Layout";
+import { navigation } from "@/data/navigation";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <div className=" mx-auto flex items-center justify-between py-4  flex-row  h-[60px] lg:h-[122px]">
           <div className="flex w-full md:w-[147px] justify-between">
             <h1 className="text-xl font-bold w-[100px] md:w-[147px]">
-              <img src="/assets/Logo.svg" />
+              <img src="/assets/Logo.svg" alt="img" />
             </h1>
             <button className="ml-2 block md:hidden" onClick={handleMenuToggle}>
               <RxHamburgerMenu />
@@ -27,7 +27,11 @@ const Header: React.FC = () => {
 
           <div className="hidden md:flex flex-row gap-8 w-full justify-center">
             {navigation.map((item) => (
-              <NavDropdown title={item.title} link={item.link} />
+              <NavDropdown
+                key={item.title}
+                title={item.title}
+                link={item.link}
+              />
             ))}
           </div>
 
@@ -49,11 +53,19 @@ const Header: React.FC = () => {
             <div className="text-red-500 text-xs md:text-sm font-semibold leading-[21px]">
               Home
             </div>
-            <img src="/assets/Chevron.svg" className="w-6 h-6 relative" />
+            <img
+              src="/assets/Chevron.svg"
+              className="w-6 h-6 relative"
+              alt="img"
+            />
             <div className="text-red-500 text-xs md:text-sm font-semibold leading-[21px]">
               Layanan Desain
             </div>
-            <img src="/assets/Chevron.svg" className="w-6 h-6 relative" />
+            <img
+              src="/assets/Chevron.svg"
+              className="w-6 h-6 relative"
+              alt="img"
+            />
             <div className="text-neutral-400 text-xs md:text-sm font-semibold leading-[21px]">
               Omah Apik 3
             </div>

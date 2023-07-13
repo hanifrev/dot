@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { homeview } from "../data/homeview";
 import HomeCard from "../components/HomeCard";
 import DetailCard from "../components/DetailCard";
 import Testimonial from "../components/Testimonial";
+import { homeview } from "@/data/homeview";
 
 const HomeList = () => {
   return (

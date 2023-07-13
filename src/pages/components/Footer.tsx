@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Layout from "./Layout";
 
@@ -12,6 +13,7 @@ const Footer = () => {
               <img
                 className="w-[120px]  md:w-[169px] relative invert"
                 src="/assets/Logo.svg"
+                alt="img"
               />
               <div className="lg:w-[608px] text-sm lg:text-base font-normal leading-normal">
                 SobatBangun adalah platform digital dari SIG yang bergerak
@@ -19,7 +21,7 @@ const Footer = () => {
                 secara lebih baik serta berkelanjutan.
               </div>
               <div className="flex flex-row p-2 gap-3">
-                <img src="/assets/Message.svg" />
+                <img src="/assets/Message.svg" alt="img" />
                 <a
                   href="mailto:sobat@sobatbangum.com"
                   className="w-[528px] text-base font-normal underline leading-snug"
@@ -32,13 +34,13 @@ const Footer = () => {
               </div>
               <div className="flex flex-row gap-[26px] justify-center md:justify-normal">
                 <a href="#">
-                  <img src="/assets/oval-ig.svg" />
+                  <img src="/assets/oval-ig.svg" alt="img" />
                 </a>
                 <a href="#">
-                  <img src="/assets/oval-fb.svg" />
+                  <img src="/assets/oval-fb.svg" alt="img" />
                 </a>
                 <a href="#">
-                  <img src="/assets/oval-yt.svg" />
+                  <img src="/assets/oval-yt.svg" alt="img" />
                 </a>
               </div>
             </div>
@@ -97,9 +99,13 @@ const Footer = () => {
                 Kredit Bangun Rumah
               </div>
               <div className="justify-start items-center gap-6  flex">
-                <img className="w-14 h-14" src="/assets/mandiri.png" />
-                <img className="w-14 h-14" src="/assets/btn.png" />
-                <img className="w-14 h-14" src="/assets/bni.png" />
+                <img
+                  className="w-14 h-14"
+                  src="/assets/mandiri.png"
+                  alt="img"
+                />
+                <img className="w-14 h-14" src="/assets/btn.png" alt="img" />
+                <img className="w-14 h-14" src="/assets/bni.png" alt="img" />
               </div>
             </div>
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-1  flex">
@@ -107,10 +113,18 @@ const Footer = () => {
                 Tunai Via Bank Transfer
               </div>
               <div className="justify-start items-start gap-6  flex">
-                <img className="w-14 h-14" src="/assets/mandiri.png" />
-                <img className="w-14 h-14" src="/assets/bri.png" />
-                <img className="w-14 h-14" src="/assets/bni.png" />
-                <img className="w-14 h-14" src="/assets/permata.png" />
+                <img
+                  className="w-14 h-14"
+                  src="/assets/mandiri.png"
+                  alt="img"
+                />
+                <img className="w-14 h-14" src="/assets/bri.png" alt="img" />
+                <img className="w-14 h-14" src="/assets/bni.png" alt="img" />
+                <img
+                  className="w-14 h-14"
+                  src="/assets/permata.png"
+                  alt="img"
+                />
               </div>
             </div>
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-1  flex">
@@ -118,9 +132,21 @@ const Footer = () => {
                 Kartu Kredit
               </div>
               <div className="justify-start items-start gap-6  flex">
-                <img className="w-14 h-[55.14px]" src="/assets/visa.png" />
-                <img className="w-14 h-[55.14px]" src="/assets/master.png" />
-                <img className="w-14 h-[55.14px]" src="/assets/jcb.png" />
+                <img
+                  className="w-14 h-[55.14px]"
+                  src="/assets/visa.png"
+                  alt="img"
+                />
+                <img
+                  className="w-14 h-[55.14px]"
+                  src="/assets/master.png"
+                  alt="img"
+                />
+                <img
+                  className="w-14 h-[55.14px]"
+                  src="/assets/jcb.png"
+                  alt="img"
+                />
               </div>
             </div>
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-2  flex">
@@ -128,10 +154,22 @@ const Footer = () => {
                 Rekan Teknologi Tambahan
               </div>
               <div className="justify-start items-center gap-6  flex">
-                <img className="w-14 h-[55.14px]" src="/assets/rekan1.png" />
+                <img
+                  className="w-14 h-[55.14px]"
+                  src="/assets/rekan1.png"
+                  alt="img"
+                />
                 <img className="w-14 " src="/assets/rekan2.png" />
-                <img className="w-14 h-[55.14px]" src="/assets/rekan3.png" />
-                <img className="w-14 h-[55.14px]" src="/assets/rekan4.png" />
+                <img
+                  className="w-14 h-[55.14px]"
+                  src="/assets/rekan3.png"
+                  alt="img"
+                />
+                <img
+                  className="w-14 h-[55.14px]"
+                  src="/assets/rekan4.png"
+                  alt="img"
+                />
               </div>
             </div>
           </div>
@@ -144,6 +182,7 @@ const Footer = () => {
               <img
                 src="/assets/sig.svg"
                 className="w-[71px] h-[41px] relative"
+                alt="img"
               />
             </div>
             <div className="text-white text-sm font-normal leading-[16.80px]">

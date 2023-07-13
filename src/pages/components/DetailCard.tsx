@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const DetailCard = () => {
@@ -5,7 +6,7 @@ const DetailCard = () => {
     <div className="w-[333px] lg:w-[364px] h-[438px] mx-auto p-6 rounded-2xl border text-black border-neutral-200 flex flex-col mt-9 lg:transform lg:-translate-y-[81px]">
       <div className="text-lg lg:text-2xl font-semibold pb-2">Omah Apik 3</div>
       <div className="flex flex-row pb-4">
-        <img src="/assets/std.png" />
+        <img src="/assets/std.png" alt="img" />
         <span className="text-xs lg:text-sm  font-normal pt-1">Studio SAe</span>
       </div>
       <div className="w-[316px] h-[50px] flex-col justify-start items-start gap-2 inline-flex">
@@ -23,7 +24,11 @@ const DetailCard = () => {
           </div>
           <div className="self-stretch justify-start items-center gap-2 flex">
             <div className="w-4 h-4 bg-red-500 rounded-[100px] justify-center items-center gap-2.5 flex">
-              <img src="/assets/Check.svg" className="w-3 h-3 relative" />
+              <img
+                src="/assets/Check.svg"
+                className="w-3 h-3 relative"
+                alt="img"
+              />
             </div>
             <div className="text-red-500 text-xs lg:text-sm  font-normal leading-[21px]">
               Dapat Dimodifikasi
@@ -33,7 +38,11 @@ const DetailCard = () => {
       </div>
       <div className="w-[277px] lg:w-[316px] h-[63px] justify-between items-center gap-2 inline-flex pt-8 flex-wrap">
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/dimensi.svg" className="w-6 h-6 relative" />
+          <img
+            src="/assets/dimensi.svg"
+            className="w-6 h-6 relative"
+            alt="img"
+          />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Dimensi Tanah
           </div>
@@ -42,7 +51,7 @@ const DetailCard = () => {
           </div>
         </div>
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/luas.svg" className="w-6 h-6 relative" />
+          <img src="/assets/luas.svg" className="w-6 h-6 relative" alt="img" />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Luas Bangunan
           </div>
@@ -56,7 +65,11 @@ const DetailCard = () => {
           </div>
         </div>
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/lantai.svg" className="w-6 h-6 relative" />
+          <img
+            src="/assets/lantai.svg"
+            className="w-6 h-6 relative"
+            alt="img"
+          />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Lantai
           </div>
@@ -65,7 +78,7 @@ const DetailCard = () => {
           </div>
         </div>
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/kamar.svg" className="w-6 h-6 relative" />
+          <img src="/assets/kamar.svg" className="w-6 h-6 relative" alt="img" />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Kamar Tidur
           </div>

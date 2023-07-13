@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 interface CardProps {
@@ -12,7 +13,7 @@ const OtherDesignCard: React.FC<CardProps> = ({ title, imgSrc, price }) => {
       key={title}
       className="w-[290px] lg:w-[316px] h-[564px] mx-auto p-4 rounded-2xl border text-black border-neutral-200 flex flex-col lg:mt-9 lg:transform lg:-translate-y-[81px]"
     >
-      <img className="w-[284px] h-[201px] rounded" src={imgSrc} />
+      <img className="w-[284px] h-[201px] rounded" src={imgSrc} alt="img" />
       <div className="flex flex-row gap-2 pt-6 pb-2">
         <div className="text-lg lg:text-2xl font-semibold ">{title}</div>
         <div className="w-[104px] h-7 px-3 py-1 bg-zinc-100 rounded-2xl border justify-start items-start gap-2.5 inline-flex">
@@ -23,13 +24,17 @@ const OtherDesignCard: React.FC<CardProps> = ({ title, imgSrc, price }) => {
       </div>
 
       <div className="flex flex-row pb-4">
-        <img src="/assets/std.png" />
+        <img src="/assets/std.png" alt="img" />
         <span className="text-xs lg:text-sm  font-normal pt-1">Studio SAe</span>
       </div>
 
       <div className="w-[255px] lg:w-[294px]  h-[63px] justify-between lg:justify-start items-start gap-2 inline-flex  flex-wrap">
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/dimensi.svg" className="w-6 h-6 relative" />
+          <img
+            src="/assets/dimensi.svg"
+            className="w-6 h-6 relative"
+            alt="img"
+          />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Dimensi Tanah
           </div>
@@ -38,7 +43,7 @@ const OtherDesignCard: React.FC<CardProps> = ({ title, imgSrc, price }) => {
           </div>
         </div>
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/luas.svg" className="w-6 h-6 relative" />
+          <img src="/assets/luas.svg" className="w-6 h-6 relative" alt="img" />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Luas Bangunan
           </div>
@@ -52,7 +57,11 @@ const OtherDesignCard: React.FC<CardProps> = ({ title, imgSrc, price }) => {
           </div>
         </div>
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/lantai.svg" className="w-6 h-6 relative" />
+          <img
+            src="/assets/lantai.svg"
+            className="w-6 h-6 relative"
+            alt="img"
+          />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Lantai
           </div>
@@ -61,7 +70,7 @@ const OtherDesignCard: React.FC<CardProps> = ({ title, imgSrc, price }) => {
           </div>
         </div>
         <div className="flex-col justify-start items-center inline-flex">
-          <img src="/assets/kamar.svg" className="w-6 h-6 relative" />
+          <img src="/assets/kamar.svg" className="w-6 h-6 relative" alt="img" />
           <div className="text-zinc-500 text-[10px] lg:text-xs font-normal leading-[18px]">
             Kamar Tidur
           </div>
