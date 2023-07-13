@@ -9,7 +9,7 @@ const OtherDesign = () => {
       <div className="text-black text-center lg:text-left font-semibold text-lg lg:text-2xl pb-6">
         Desain Lainnya oleh Studio SAe
       </div>
-      <div className="flex flex-col justify-center md:flex-row md:flex-wrap gap-4 lg:pt-[45px]">
+      <div className="flex flex-col justify-center md:flex-row md:flex-wrap gap-4 lg:pt-[45px] pb-8 lg:pb-0">
         {OtherDesignData.map((item, index) => (
           <OtherDesignCard
             key={item.title}

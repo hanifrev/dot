@@ -90,7 +90,7 @@ const OtherDesignCard: React.FC<CardProps> = ({ title, imgSrc, price }) => {
           </div>
         </div>
       </div>
-      <button className="w-[255px] lg:w-[284px] h-[37px] px-4 py-2 mt-[58px] rounded-md border border-rose-500 hover:bg-red-200 justify-center items-center gap-2.5 inline-flex">
+      <button className="w-[255px] lg:w-[284px] h-[37px] px-4 py-2  rounded-md border border-rose-500 hover:bg-red-200 justify-center items-center gap-2.5 inline-flex mt-[40px]">
         <div className="text-center text-rose-500 text-sm font-semibold leading-[21px]">
           Lihat Detail
         </div>
