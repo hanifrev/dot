@@ -8,7 +8,7 @@ interface CardProps {
 
 const OtherDesignCard: React.FC<CardProps> = ({ title, imgSrc, price }) => {
   return (
-    <div className="w-[290px] lg:w-[316px] h-[564px] mx-auto p-4 rounded-2xl border text-black border-neutral-200 flex flex-col md:mt-9 lg:transform lg:-translate-y-[81px]">
+    <div className="w-[290px] lg:w-[316px] h-[564px] mx-auto p-4 rounded-2xl border text-black border-neutral-200 flex flex-col lg:mt-9 lg:transform lg:-translate-y-[81px]">
       <img className="w-[284px] h-[201px] rounded" src={imgSrc} />
       <div className="flex flex-row gap-2 pt-6 pb-2">
         <div className="text-lg lg:text-2xl font-semibold ">{title}</div>
